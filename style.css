@@ -2,28 +2,52 @@
     margin: 0%
 }
 header {
-     background-color: white;
-      margin-bottom: 30px ;
-      transition: all ease 500ms;
-     margin-bottom: 20px;
+     background-image: linear-gradient(rgb(80, 224, 80),black);
+     height: 690px;
+     width: 100%;
 }
-header:hover {
-    background-image: linear-gradient(black,green);
-    padding: 30px;
+.cima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 690px;
+    width: 100%;
 }
+.squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: block;
+    position: absolute;
+    top: 100%;
+    bottom: 20%;
+    animation: cima 5s linear infinite;
+}
+@keyframes cima {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000px) rotate(960deg);
+    }
+}
+
 body {
     background-color: black;
+    width: 100%;
 }
 nav > a {
     text-decoration: none;
-    color: rgb(100, 167, 100);
+    color: rgb(8, 8, 8);
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.logo {text-align: center;
-font-weight: bold;
-color: green;
-font-family: "Titulo";
-font-size: 60px;
+.logo {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(159, 243, 159);
+    font-family: "Titulo";
+    font-size: 90px;
 }
 .extras {
    background-image: linear-gradient(white,white);
@@ -72,7 +96,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    margin: 0px 0px;
+    margin: 90px 0px;
 }
 p {
     font-size: 30px;
@@ -97,7 +121,7 @@ p {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    margin: 0px 0px;
+    margin: 90px 0px;
 }
 .para3 {
     display: flex;
@@ -117,7 +141,7 @@ p {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    margin: 0px 0px;
+    margin: 90px 0px;
 }
 .para4 {
     display: flex;
@@ -137,8 +161,9 @@ p {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    margin: 0px 0px;
+    margin: 90px 0px;
 }
-
-
-
+h1 {
+    color:white
+}
+ 
